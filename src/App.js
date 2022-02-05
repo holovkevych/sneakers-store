@@ -152,7 +152,6 @@ function App() {
 
         <Header onClickCart={() => setCartOpened(true)} />
         <Route path="/" exact>
-          <Slider />
           <Home
             items={items}
             cartItems={cartItems}
