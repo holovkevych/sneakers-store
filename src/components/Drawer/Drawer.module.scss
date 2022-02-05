@@ -37,6 +37,13 @@
   transition: transform 0.3s ease-out;
   overflow-y: scroll;
 
+    @media (max-width: 1300px) {
+      width: 50%;
+    }
+
+    @media (max-width: 700px) {
+    width: 100%;
+  }  
 
   .items {
     flex: 1;

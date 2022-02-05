@@ -44,7 +44,7 @@ function Home({
           <input onChange={onChangeSearchInput} value={searchValue} placeholder="Пошук..." />
         </div>
       </div>
-      <div className="cardList d-flex flex-wrap">{renderItems()}</div>
+      <div className="card--items">{renderItems()}</div>
     </div>
   );
 }

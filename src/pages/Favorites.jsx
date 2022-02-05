@@ -13,7 +13,7 @@ function Favorites() {
       </div>
 
       { favorites.length
-        ? (<div className="d-flex flex-wrap">
+        ? (<div className="favorites--items">
             {favorites.map((item, index) => (
               <Card 
                 key={item.id} 

@@ -28,7 +28,7 @@ function Orders() {
         <h1>Мої замовлення</h1>
       </div>
 
-      <div className="d-flex flex-wrap">
+      <div className="orders--items">
         {(isLoading ? [...Array(8)] : orders).map((item, index) => (
           <Card key={index} loading={isLoading} {...item} />
         ))}

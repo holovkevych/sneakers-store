@@ -54,7 +54,10 @@ function Card({
                 alt="like" />
             </div>
           )}
-          <img width="100%" height={135} src={imageUrl} alt="Sneakers" />
+          <img 
+            width="100%" 
+            src={imageUrl} 
+            alt="Sneakers" />
           <h5>{title}</h5>
           <div className={styles.priceBlock}>
             <div className="d-flex flex-column">
