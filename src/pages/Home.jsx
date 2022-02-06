@@ -28,7 +28,7 @@ function Home({
 
   return (
     <div className="content p-40">
-      <div className="d-flex align-center justify-between mb-40">
+      <div className="home--title">
         <h1>{searchValue ? `Пошук за запитом: "${searchValue}"` : 'Асортимент'}</h1>
         <div className="search-block d-flex">
           <img src="img/search.svg" alt="Search" />
