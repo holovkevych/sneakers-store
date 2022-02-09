@@ -22,9 +22,10 @@ function Favorites() {
                 {...item} />
             ))}
           </div>)
-        : <div className="mt-50">
-            <h2 className="d-flex justify-center">Вибраних нема :(</h2>
-            <p className="d-flex justify-center">Ви ще нічого не додали до обраних</p>
+        : <div className="no--favorites">
+            <span>😔</span>
+            <h2>Вибраних нема :(</h2>
+            <p>Ви ще нічого не додали до обраних</p>
           </div>
       } 
     </div>

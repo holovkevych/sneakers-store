@@ -26,13 +26,19 @@ function Orders() {
     <div className="content p-40">
       <div className="d-flex align-center justify-between mb-40">
         <h1>Мої замовлення</h1>
-      </div>
-
-      <div className="orders--items">
-        {(isLoading ? [...Array(8)] : orders).map((item, index) => (
-          <Card key={index} loading={isLoading} {...item} />
-        ))}
-      </div>
+        </div>
+      { orders.length
+        ? <div className="orders--items">
+            {(isLoading ? [...Array(8)] : orders).map((item, index) => (
+              <Card key={index} loading={isLoading} {...item} />
+            ))}
+          </div>
+        :  <div className="no--orders">
+            <span>😔</span>
+            <h2>Придбаних ще нема :(</h2>
+            <p>Ви ще нічого не купили...</p>
+          </div>
+      } 
     </div>
   );
 }
